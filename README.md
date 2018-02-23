@@ -6,8 +6,6 @@ Python script to convert a bunch of Microsoft Powerpoint files (.ppt or .pptx) t
 2. Run the script
 
 ```
-$ python batch_ppt_to_pdf.py 
+python batch_ppt_to_pdf.py 
 ```
-
-## Todo
-* Make usable from command line
+Tested with Python 3 on Windows
