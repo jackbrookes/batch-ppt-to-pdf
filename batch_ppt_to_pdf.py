@@ -17,7 +17,7 @@ def convert_files_in_folder(powerpoint, folder):
     files = os.listdir(folder)
     pptfiles = [f for f in files if f.endswith((".ppt", ".pptx"))]
     for pptfile in pptfiles:
-        fullpath = os.path.join(cwd, pptfile)
+        fullpath = os.path.join(folder, pptfile)
         ppt_to_pdf(powerpoint, fullpath, fullpath)
 
 if __name__ == "__main__":
