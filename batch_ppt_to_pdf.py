@@ -8,6 +8,7 @@ def init_powerpoint():
 
 def ppt_to_pdf(powerpoint, inputFileName, outputFileName, formatType = 32):
     if outputFileName[-3:] != 'pdf':
+        outputFileName,_ = os.path.splitext(outputFileName)
         outputFileName = outputFileName + ".pdf"
     deck = powerpoint.Presentations.Open(inputFileName)
     deck.SaveAs(outputFileName, formatType) # formatType = 32 for ppt to pdf
